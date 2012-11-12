@@ -1,0 +1,5 @@
+sources:
+  "rply-1.1.1.tar.gz:"	b0c2f34f76d203607dd0af9dad4c322d62bc89f5
+  "rply_cmake_export_cmakelists.txt:"	6cf150b4648a1a19c64b205202daf24c2b911940
+  "rply_CMakeLists.txt:"	e449f1fc0ec37dc7082057d52096bd4dd21932cc
+  "RPLYConfig.cmake.in:"	322043401a1b58114920510770a27b7b7291b8ff
