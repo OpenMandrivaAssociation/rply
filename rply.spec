@@ -86,3 +86,10 @@ cp %{SOURCE3} CMake/export/CMakeLists.txt
 %{_libdir}/lib%{name}.so
 %{_datadir}/%{name}/
 
+
+
+%changelog
+* Tue Mar 13 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.1.1-1
++ Revision: 784764
+- imported package rply
+
