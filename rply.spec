@@ -1,15 +1,15 @@
 %define major	1
 %define libname	%mklibname %{name} %{major}
-%define develname	%mklibname -d %{name}
+%define devname	%mklibname -d %{name}
 
-Name:		rply
-Version:	1.1.1
-Release:	5
 Summary:	A library to read and write PLY files
+Name:		rply
+Version:	1.1.3
+Release:	1
 Group:		Development/Other
 License:	MIT
-URL:		http://www.tecgraf.puc-rio.br/~diego/professional/rply/
-Source0:	http://www.tecgraf.puc-rio.br/~diego/professional/rply/%{name}-%{version}.tar.gz
+Url:		http://w3.impa.br/~diego/software/rply/
+Source0:	http://w3.impa.br/~diego/software/rply/%{name}-%{version}.tar.gz
 Source1:	rply_CMakeLists.txt
 Source2:	RPLYConfig.cmake.in
 Source3:	rply_cmake_export_cmakelists.txt
@@ -38,13 +38,13 @@ RPly is a library that lets applications read and write PLY files.
 The PLY file format is widely used to store geometric information, such as 3D
 models, but is general enough to be useful for other purposes.
 
-%package -n %{develname}
+%package -n %{devname}
 Summary:	Development files and headers for %{name}
 Group:		Development/Other
 Requires:	%{libname} = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
 
-%description -n %{develname}
+%description -n %{devname}
 Rply Library Header Files and Link Libraries.
 
 %prep
@@ -81,15 +81,8 @@ cp %{SOURCE3} CMake/export/CMakeLists.txt
 %files -n %{libname}
 %{_libdir}/lib%{name}.so.%{major}*
 
-%files -n %{develname}
+%files -n %{devname}
 %{_includedir}/%{name}/*
 %{_libdir}/lib%{name}.so
 %{_datadir}/%{name}/
-
-
-
-%changelog
-* Tue Mar 13 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.1.1-1
-+ Revision: 784764
-- imported package rply
 
