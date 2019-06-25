@@ -4,7 +4,7 @@
 
 Summary:	A library to read and write PLY files
 Name:		rply
-Version:	1.1.3
+Version:	1.1.4
 Release:	6
 Group:		Development/Other
 License:	MIT
