@@ -8,7 +8,7 @@ Version:	1.1.4
 Release:	7
 Group:		Development/Other
 License:	MIT
-Url:		http://w3.impa.br/~diego/software/rply/
+Url:		https://w3.impa.br/~diego/software/rply/
 Source0:	http://w3.impa.br/~diego/software/rply/%{name}-%{version}.tar.gz
 Source1:	rply_CMakeLists.txt
 Source2:	RPLYConfig.cmake.in
